@@ -3,6 +3,7 @@
 This is the official implementation of Cross-scale Attention Guided Multi-instance Learning for Crohn's Disease Diagnosis with Pathological Images. <br />
 
 ![Overview](https://github.com/hrlblab/CS-MIL/blob/main/Cross-scale.png)<br />
+![Pipeline](https://github.com/hrlblab/CS-MIL/blob/main/Cross-scale.png)<br />
 
 **Conference Paper** <br />
 > [Cross-scale Attention Guided Multi-instance Learning for Crohn's Disease Diagnosis with Pathological Images](https://link.springer.com/chapter/10.1007/978-3-031-18814-5_3) <br />
