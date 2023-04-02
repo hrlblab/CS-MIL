@@ -17,7 +17,9 @@ This is the official implementation of Cross-scale Attention Guided Multi-instan
 > *MMMI 2022* <br />
 
 ![Overview](https://github.com/hrlblab/CS-MIL/blob/main/Cross-scale.png)<br />
-![Pipeline](https://github.com/hrlblab/CS-MIL/blob/main/Cross-scale-pipeline.png)<br />
+![Pipeline](https://github.com/hrlblab/CS-MIL/blob/main/Relativework.pdf)<br />
+![Cross-scale attention map on a CD WSI](https://github.com/hrlblab/CS-MIL/blob/main/AttentionMap.pdf)<br />
+![Cross-scale attention map on toy dataset](https://github.com/hrlblab/CS-MIL/blob/main/ToydatasetResults.pdf)<br />
 
 
 ## Abstract
