@@ -35,9 +35,8 @@ To assess the effectiveness of the cross-scale attention mechanism, we evaluated
 
 The figure below shows the patches for training in the two datasets (Micro-anomaly dataset and Macro-anomaly dataset). <br />
 
-(1) The  micro white crosses pattern only appear on positive patches at 20x maganification in the micro-anomaly dataset;  <br />
-(2) the macro anomaly (ellipse) is easily recognized at 5x with larger visual fields in macro-anomaly dataset.  <br />
-
+(1) The  micro white crosses pattern only appear on positive patches at 20x maganification in the micro-anomaly dataset.  <br />
+(2) The macro anomaly (ellipse) is easily recognized at 5x with larger visual fields in macro-anomaly dataset.  <br />
 All of the patches are extracted from normal tissue samples in Unitopatho dataset. Two datasets were released to measure the generalization of the cross-scale designs for digital pathology community. <br /> The patches are avaliable at https://drive.google.com/drive/folders/1PvWi4lmA0bPeLZFRxDqYFftth69srIyn?usp=sharing <br />
 
 <img src='https://github.com/hrlblab/CS-MIL/blob/main/Toydataset.png' align="center" height="530px"> 
@@ -46,7 +45,9 @@ The proposed method accurately differentiates distinctive patterns at different 
 
 (1) For the Micro-anomaly dataset, the instance attention successfully highlights positive regions with higher attention scores in corresponding regions at 20x.  <br />
 
-(2) For the Macro-anomaly dataset, the instance attention correctly locates ellipses instead of circles with higher attention scores at 5x. The box plots on the right panel show the attention score distribution at different scales, proving that the cross-scale attention mechanism provides reliable scores at different scales.<br />
+(2) For the Macro-anomaly dataset, the instance attention correctly locates ellipses instead of circles with higher attention scores at 5x.  <br />
+
+(3) The box plots on the right panel show the attention score distribution at different scales, proving that the cross-scale attention mechanism provides reliable scores at different scales.<br />
 
 ![Cross-scale attention map on toy dataset](https://github.com/hrlblab/CS-MIL/blob/main/ToydatasetResults.png)<br />
 
