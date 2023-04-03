@@ -23,18 +23,30 @@ This is the official implementation of Cross-scale Attention Guided Multi-instan
 
 ## Abstract
 Analyzing high resolution whole slide images (WSIs) with regard to information across multiple scales poses a significant challenge in digital pathology. Multi-instance learning (MIL) is a common solution for working with high resolution images by classifying bags of objects (i.e. sets of smaller image patches). However, such processing is typically performed at a single scale (e.g., 20X magnification) of WSIs, disregarding the vital inter-scale information that is key to diagnoses by human pathologists. In this study, we propose a novel cross-scale MIL algorithm to explicitly aggregate inter-scale relationships into a single MIL network for pathological image diagnosis. The contribution of this paper is three-fold: <br /> 
+
 (1) A novel cross-scale MIL (CS-MIL) algorithm that integrates the multi-scale information and the inter-scale relationships is proposed; <br /> 
+
 (2) A toy dataset with scale-specific morphological features is created and released to examine and visualize differential cross-scale attention; <br /> 
+
 (3) Superior performance on both in-house and public datasets is demonstrated by our simple cross-scale MIL strategy.<br /> 
 
 ## Toydataset
 To assess the effectiveness of the cross-scale attention mechanism, we evaluated CS-MIL using two toy datasets that represent distinct morphological patterns at different scales in digital pathology. These datasets were selected to simulate different scenarios and test the functionality of our approach.<br />
 
-The figure below shows the patches for training in the two datasets (Micro-anomaly dataset and Macro-anomaly dataset). The  micro white crosses pattern only appear on positive patches at 20x maganification in the micro-anomaly dataset, while the macro anomaly (ellipse) is easily recognized at 5x with larger visual fields in macro-anomaly dataset. All of the patches are extracted from normal tissue samples in Unitopatho dataset. Two datasets were released to measure the generalization of the cross-scale designs for digital pathology community. <br /> The patches are avaliable at <br />
+The figure below shows the patches for training in the two datasets (Micro-anomaly dataset and Macro-anomaly dataset). <br />
+
+(1) The  micro white crosses pattern only appear on positive patches at 20x maganification in the micro-anomaly dataset;  <br />
+(2) the macro anomaly (ellipse) is easily recognized at 5x with larger visual fields in macro-anomaly dataset.  <br />
+
+All of the patches are extracted from normal tissue samples in Unitopatho dataset. Two datasets were released to measure the generalization of the cross-scale designs for digital pathology community. <br /> The patches are avaliable at https://drive.google.com/drive/folders/1PvWi4lmA0bPeLZFRxDqYFftth69srIyn?usp=sharing <br />
 
 <img src='https://github.com/hrlblab/CS-MIL/blob/main/Toydataset.png' align="center" height="530px"> 
 
-The proposed method accurately differentiates distinctive patterns at different scales in a stable manner. Figure below displays the cross-scale attention maps at the instance level and multiple scales. For the Micro-anomaly dataset, the instance attention successfully highlights positive regions with higher attention scores in corresponding regions at 20x. For the Macro-anomaly dataset, the instance attention correctly locates ellipses instead of circles with higher attention scores at 5x. The box plots on the right panel show the attention score distribution at different scales, proving that the cross-scale attention mechanism provides reliable scores at different scales.<br />
+The proposed method accurately differentiates distinctive patterns at different scales in a stable manner. Figure below displays the cross-scale attention maps at the instance level and multiple scales.  <br />
+
+(1) For the Micro-anomaly dataset, the instance attention successfully highlights positive regions with higher attention scores in corresponding regions at 20x.  <br />
+
+(2) For the Macro-anomaly dataset, the instance attention correctly locates ellipses instead of circles with higher attention scores at 5x. The box plots on the right panel show the attention score distribution at different scales, proving that the cross-scale attention mechanism provides reliable scores at different scales.<br />
 
 ![Cross-scale attention map on toy dataset](https://github.com/hrlblab/CS-MIL/blob/main/ToydatasetResults.png)<br />
 
