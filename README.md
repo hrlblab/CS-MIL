@@ -19,18 +19,17 @@ This is the official implementation of Cross-scale Attention Guided Multi-instan
 ![Overview](https://github.com/hrlblab/CS-MIL/blob/main/Cross-scale.png)<br />
 ![Pipeline](https://github.com/hrlblab/CS-MIL/blob/main/Relativework.png)<br />
 
-<img src='https://github.com/hrlblab/CS-MIL/blob/main/AttentionMap.png' align="center" height="230px"> 
-![Cross-scale attention map on a CD WSI](https://github.com/hrlblab/CS-MIL/blob/main/AttentionMap.png)<br />
-![Toy dataset](https://github.com/hrlblab/CS-MIL/blob/main/Toydataset.png)<br />
-![Cross-scale attention map on toy dataset](https://github.com/hrlblab/CS-MIL/blob/main/ToydatasetResults.png)<br />
-
+<img src='https://github.com/hrlblab/CS-MIL/blob/main/AttentionMap.png' align="center" height="730px"> 
 
 
 ## Abstract
 Analyzing high resolution whole slide images (WSIs) with regard to information across multiple scales poses a significant challenge in digital pathology. Multi-instance learning (MIL) is a common solution for working with high resolution images by classifying bags of objects (i.e. sets of smaller image patches). However, such processing is typically performed at a single scale (e.g., 20X magnification) of WSIs, disregarding the vital inter-scale information that is key to diagnoses by human pathologists. In this study, we propose a novel cross-scale MIL algorithm to explicitly aggregate inter-scale relationships into a single MIL network for pathological image diagnosis. The contribution of this paper is three-fold: (1) A novel cross-scale MIL (CS-MIL) algorithm that integrates the multi-scale information and the inter-scale relationships is proposed; (2) A toy dataset with scale-specific morphological features is created and released to examine and visualize differential cross-scale attention; (3) Superior performance on both in-house and public datasets is demonstrated by our simple cross-scale MIL strategy.<br /> 
 
+## Toydataset
+To assess the effectiveness of the cross-scale attention mechanism, we evaluated CS-MIL using two toy datasets that represent distinct morphological patterns at different scales in digital pathology. These datasets were selected to simulate different scenarios and test the functionality of our approach.
+<img src='https://github.com/hrlblab/CS-MIL/blob/main/Toydataset.png' align="center" height="730px"> 
 
-
+![Cross-scale attention map on toy dataset](https://github.com/hrlblab/CS-MIL/blob/main/ToydatasetResults.png)<br />
 
 ## Citation
 ```
