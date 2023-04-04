@@ -1,12 +1,12 @@
 # Cross-scale Attention Guided Multi-instance Learning for Crohn's Disease Diagnosis with Pathological Images
 
-### [[Project Page]](https://github.com/hrlblab/CS-MIL)   [[Journal paper]](https://arxiv.org/pdf/2206.13632.pdf) [[MMMI 2022 paper]](https://link.springer.com/chapter/10.1007/978-3-031-18814-5_3) <br />
+### [[Project Page]](https://github.com/hrlblab/CS-MIL)   [[Journal paper]](https://arxiv.org/pdf/2304.00216.pdf) [[MMMI 2022 paper]](https://link.springer.com/chapter/10.1007/978-3-031-18814-5_3) <br />
 
 
 This is the official implementation of Cross-scale Attention Guided Multi-instance Learning for Crohn's Disease Diagnosis with Pathological Images. <br />
 
 **Journal Paper** <br />
-> [Cross-scale Multi-instance Learning for Pathological Image Diagnosis](https://ieeexplore.ieee.org/document/10079171) <br />
+> [Cross-scale Multi-instance Learning for Pathological Image Diagnosis](https://arxiv.org/pdf/2304.00216.pdf) <br />
 > Ruining Deng, Can Cui, Lucas W. Remedios, Shunxing Bao, R. Michael Womick, Sophie Chiron, Jia Li, Joseph T. Roland, Ken S. Lau, Qi Liu, Keith T. Wilson, Yaohong Wang, Lori A. Coburn, Bennett A. Landman, and Yuankai Huo <br />
 > *Under review* <br />
 
