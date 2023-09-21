@@ -45,9 +45,7 @@ You can also refer the source code of the whole pipeline for the step-by-step pr
 Analyzing high resolution whole slide images (WSIs) with regard to information across multiple scales poses a significant challenge in digital pathology. Multi-instance learning (MIL) is a common solution for working with high resolution images by classifying bags of objects (i.e. sets of smaller image patches). However, such processing is typically performed at a single scale (e.g., 20X magnification) of WSIs, disregarding the vital inter-scale information that is key to diagnoses by human pathologists. In this study, we propose a novel cross-scale MIL algorithm to explicitly aggregate inter-scale relationships into a single MIL network for pathological image diagnosis. The contribution of this paper is three-fold: <br /> 
 
 (1) A novel cross-scale MIL (CS-MIL) algorithm that integrates the multi-scale information and the inter-scale relationships is proposed; <br /> 
-
 (2) A toy dataset with scale-specific morphological features is created and released to examine and visualize differential cross-scale attention; <br /> 
-
 (3) Superior performance on both in-house and public datasets is demonstrated by our simple cross-scale MIL strategy.<br /> 
 
 
@@ -65,9 +63,7 @@ All of the patches are extracted from normal tissue samples in Unitopatho datase
 The proposed method accurately differentiates distinctive patterns at different scales in a stable manner. Figure below displays the cross-scale attention maps at the instance level and multiple scales.  <br />
 
 (1) For the Micro-anomaly dataset, the instance attention successfully highlights positive regions with higher attention scores in corresponding regions at 20x.  <br />
-
 (2) For the Macro-anomaly dataset, the instance attention correctly locates ellipses instead of circles with higher attention scores at 5x.  <br />
-
 (3) The box plots on the right panel show the attention score distribution at different scales, proving that the cross-scale attention mechanism provides reliable scores at different scales.<br />
 
 ![Cross-scale attention map on toy dataset](https://github.com/hrlblab/CS-MIL/blob/main/ToydatasetResults.png)<br />
