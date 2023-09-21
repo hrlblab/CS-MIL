@@ -20,6 +20,14 @@ This is the official implementation of Cross-scale Attention Guided Multi-instan
 + We release an inference pipeline as a single Docker.
 ```
 
+## Quick Start
+#### Get our docker image and run the docker with GPU
+
+```
+sudo docker pull ddrrnn123/cs-mil:1.0
+docker run --rm -v /Data2/CS-MIL_data/input:/input/:ro -v /Data2/CS-MIL_data/output:/output --gpus all -it ddrrnn123/cs-mil:1.0
+```
+
 ![Overview](https://github.com/hrlblab/CS-MIL/blob/main/Cross-scale.png)<br />
 ![Pipeline](https://github.com/hrlblab/CS-MIL/blob/main/Relativework.png)<br />
 ![AttentionMap](https://github.com/hrlblab/CS-MIL/blob/main/AttentionMap.png)<br />
@@ -33,16 +41,6 @@ Analyzing high resolution whole slide images (WSIs) with regard to information a
 (2) A toy dataset with scale-specific morphological features is created and released to examine and visualize differential cross-scale attention; <br /> 
 
 (3) Superior performance on both in-house and public datasets is demonstrated by our simple cross-scale MIL strategy.<br /> 
-
-
-## Quick Start
-#### Get our docker image and run the docker with GPU
-
-```
-sudo docker pull ddrrnn123/cs-mil:1.0
-docker run --rm -v /Data2/CS-MIL_data/input:/input/:ro -v /Data2/CS-MIL_data/output:/output --gpus all -it ddrrnn123/cs-mil:1.0
-
-```
 
 
 ## Toydataset
