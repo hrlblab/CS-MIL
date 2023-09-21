@@ -16,6 +16,10 @@ This is the official implementation of Cross-scale Attention Guided Multi-instan
 > Ruining Deng, Can Cui, Lucas W. Remedios, Shunxing Bao, R. Michael Womick, Sophie Chiron, Jia Li, Joseph T. Roland, Ken S. Lau, Qi Liu, Keith T. Wilson, Yaohong Wang, Lori A. Coburn, Bennett A. Landman, and Yuankai Huo <br />
 > *MMMI 2022* <br />
 
+```diff
++ We release an inference pipeline as a single Docker.
+```
+
 ![Overview](https://github.com/hrlblab/CS-MIL/blob/main/Cross-scale.png)<br />
 ![Pipeline](https://github.com/hrlblab/CS-MIL/blob/main/Relativework.png)<br />
 ![AttentionMap](https://github.com/hrlblab/CS-MIL/blob/main/AttentionMap.png)<br />
@@ -29,6 +33,17 @@ Analyzing high resolution whole slide images (WSIs) with regard to information a
 (2) A toy dataset with scale-specific morphological features is created and released to examine and visualize differential cross-scale attention; <br /> 
 
 (3) Superior performance on both in-house and public datasets is demonstrated by our simple cross-scale MIL strategy.<br /> 
+
+
+## Quick Start
+#### Get our docker image and run the docker with GPU
+
+```
+sudo docker pull ddrrnn123/cs-mil:1.0
+docker run --rm -v /Data2/CS-MIL_data/input:/input/:ro -v /Data2/CS-MIL_data/output:/output --gpus all -it ddrrnn123/cs-mil:1.0
+
+```
+
 
 ## Toydataset
 To assess the effectiveness of the cross-scale attention mechanism, we evaluated CS-MIL using two toy datasets that represent distinct morphological patterns at different scales in digital pathology. These datasets were selected to simulate different scenarios and test the functionality of our approach.<br />
