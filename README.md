@@ -1,6 +1,6 @@
 # Cross-scale Attention Guided Multi-instance Learning for Crohn's Disease Diagnosis with Pathological Images
 
-### [[Project Page]](https://github.com/hrlblab/CS-MIL)   [[Journal paper]](https://arxiv.org/pdf/2304.00216.pdf) [[MMMI 2022 paper]](https://link.springer.com/chapter/10.1007/978-3-031-18814-5_3) <br />
+###[[Pipeline Docker]](https://hub.docker.com/repository/docker/ddrrnn123/cs-mil/)  [[Project Page]](https://github.com/hrlblab/CS-MIL)   [[Journal paper]](https://arxiv.org/pdf/2304.00216.pdf) [[MMMI 2022 paper]](https://link.springer.com/chapter/10.1007/978-3-031-18814-5_3) <br />
 
 
 This is the official implementation of Cross-scale Attention Guided Multi-instance Learning for Crohn's Disease Diagnosis with Pathological Images. <br />
@@ -30,7 +30,7 @@ docker run --rm -v [/Data2/CS-MIL_data]/input:/input/:ro -v [/Data2/CS-MIL_data]
 
 You may put your WSIs in the "input" folder and change the dirname inside of "[]" to your local root. <br />
 
-You can also refer the source code of the docker file for the step-by-step process, which are <br /> 
+You can also refer the source code of the whole pipeline for the step-by-step process, which are <br /> 
 (1) Get tiles (with foreground segmentation); <br />
 (2) Embedding the patches by SimSiam pretrained models at different scales; <br />
 (3) Clustering the features; <br />
