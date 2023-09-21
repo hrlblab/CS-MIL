@@ -25,8 +25,11 @@ This is the official implementation of Cross-scale Attention Guided Multi-instan
 
 ```
 sudo docker pull ddrrnn123/cs-mil:1.0
-docker run --rm -v /Data2/CS-MIL_data/input:/input/:ro -v /Data2/CS-MIL_data/output:/output --gpus all -it ddrrnn123/cs-mil:1.0
+docker run --rm -v [/Data2/CS-MIL_data]/input:/input/:ro -v [/Data2/CS-MIL_data]/output:/output --gpus all -it ddrrnn123/cs-mil:1.0
 ```
+
+You may put your WSIs in the "input" folder and change the dirname inside of "[]" to your local root.
+
 
 ![Overview](https://github.com/hrlblab/CS-MIL/blob/main/Cross-scale.png)<br />
 ![Pipeline](https://github.com/hrlblab/CS-MIL/blob/main/Relativework.png)<br />
