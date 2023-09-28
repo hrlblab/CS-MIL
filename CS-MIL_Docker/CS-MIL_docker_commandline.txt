@@ -1,0 +1,13 @@
+# create the docker
+docker build -f Dockerfile -t cs-mil .
+docker login
+docker tag cs-mil ddrrnn123/cs-mil:2.0
+docker push ddrrnn123/cs-mil:2.0
+
+# run the code online with gpu
+docker run --rm -v /Data2/CS-MIL_data/input:/input/:ro -v /Data2/CS-MIL_data/output:/output --gpus all -it ddrrnn123/cs-mil:2.0
+
+
+# run the docker locally with gpu
+docker run --rm -v /Data2/CS-MIL_data/input:/input/:ro -v /Data2/CS-MIL_data/output:/output --gpus all -it cs-mil:2.0
+
