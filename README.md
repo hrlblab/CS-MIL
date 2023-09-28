@@ -73,7 +73,7 @@ The figure below shows the patches for training in the two datasets (Micro-anoma
 
 (1) The  micro white crosses pattern only appear on positive patches at 20x maganification in the micro-anomaly dataset.  <br />
 (2) The macro anomaly (ellipse) is easily recognized at 5x with larger visual fields in macro-anomaly dataset.  <br />
-All of the patches are extracted from normal tissue samples in Unitopatho dataset. Two datasets were released to measure the generalization of the cross-scale designs for digital pathology community. <br /> The patches are avaliable at [here](https://drive.google.com/drive/folders/1PvWi4lmA0bPeLZFRxDqYFftth69srIyn?usp=sharing) <br />
+All of the patches are extracted from normal tissue samples in Unitopatho dataset. Two datasets were released to measure the generalization of the cross-scale designs for digital pathology community. <br /> The patches are avaliable at [here](https://drive.google.com/drive/folders/1PvWi4lmA0bPeLZFRxDqYFftth69srIyn?usp=sharing). <br />
 
 <img src='https://github.com/hrlblab/CS-MIL/blob/main/Toydataset.png' align="center" height="530px"> 
 
