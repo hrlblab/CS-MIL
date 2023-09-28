@@ -97,12 +97,10 @@ Run [MIL_bag_generation.py](https://github.com/hrlblab/CS-MIL/blob/main/Toydatas
 
 ## Citation
 ```
-@inproceedings{deng2022cross,
-  title={Cross-Scale Attention Guided Multi-instance Learning for Crohn’s Disease Diagnosis with Pathological Images},
+@article{deng2023cross,
+  title={Cross-scale Multi-instance Learning for Pathological Image Diagnosis},
   author={Deng, Ruining and Cui, Can and Remedios, Lucas W and Bao, Shunxing and Womick, R Michael and Chiron, Sophie and Li, Jia and Roland, Joseph T and Lau, Ken S and Liu, Qi and others},
-  booktitle={International Workshop on Multiscale Multimodal Medical Imaging},
-  pages={24--33},
-  year={2022},
-  organization={Springer}
+  journal={arXiv preprint arXiv:2304.00216},
+  year={2023}
 }
 ```
