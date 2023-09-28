@@ -24,8 +24,8 @@ This is the official implementation of Cross-scale Attention Guided Multi-instan
 #### Get our docker image and run the docker with GPU
 
 ```
-sudo docker pull ddrrnn123/cs-mil:1.0
-docker run --rm -v [/Data2/CS-MIL_data]/input:/input/:ro -v [/Data2/CS-MIL_data]/output:/output --gpus all -it ddrrnn123/cs-mil:1.0
+sudo docker pull ddrrnn123/cs-mil:2.0
+docker run --rm -v [/Data2/CS-MIL_data]/input:/input/:ro -v [/Data2/CS-MIL_data]/output:/output --gpus all -it ddrrnn123/cs-mil:2.0
 ```
 
 You may put your WSIs in the "input" folder and change the dirname inside of "[]" to your local root. <br />
