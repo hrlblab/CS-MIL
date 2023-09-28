@@ -96,7 +96,7 @@ Run [MIL_bag_generation.py](https://github.com/hrlblab/CS-MIL/blob/main/Toydatas
 
 
 ## Deployment on Toydataset
-This code is inspired by [DeepAttnMISL](https://github.com/uta-smile/DeepAttnMISL).
+This code is inspired by [DeepAttnMISL](https://github.com/uta-smile/DeepAttnMISL) and [AttentionDeepMIL](https://github.com/AMLab-Amsterdam/AttentionDeepMIL).
 
 
 ## Citation
