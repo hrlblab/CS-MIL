@@ -1,4 +1,4 @@
-# Cross-scale Attention Guided Multi-instance Learning for Crohn's Disease Diagnosis with Pathological Images
+# Cross-scale Multi-instance Learning for Pathological Image Diagnosis
 
 ### [[Pipeline Docker]](https://hub.docker.com/repository/docker/ddrrnn123/cs-mil/)  [[Project Page]](https://github.com/hrlblab/CS-MIL)   [[Journal paper]](https://arxiv.org/pdf/2304.00216.pdf) [[MMMI 2022 paper]](https://link.springer.com/chapter/10.1007/978-3-031-18814-5_3) <br />
 
@@ -30,18 +30,16 @@ docker run --rm -v [/Data2/CS-MIL_data]/input:/input/:ro -v [/Data2/CS-MIL_data]
 
 You may put your WSIs in the "input" folder and change the dirname inside of "[]" to your local root. <br />
 
-You can also refer the source code of the whole pipeline for the step-by-step process, which are <br /> 
+You can also refer the source code of the whole pipeline in [CS-MIL_Docker/src/run_inference.py](https://github.com/hrlblab/CS-MIL/blob/main/CS-MIL_Docker/src/run_inference.py) for the step-by-step process, which are <br /> 
 (1) Get tiles (with foreground segmentation); <br />
-(2) Embedding the patches by SimSiam pretrained models at different scales; <br />
+(2) Embedding the patches by SimSiam pre-trained models at different scales; <br />
 (3) Clustering the features; <br />
 (4) Get CD classification by pretrained CS-MIL models. <br />
 
+## Abstract
 ![Overview](https://github.com/hrlblab/CS-MIL/blob/main/Cross-scale.png)<br />
 ![Pipeline](https://github.com/hrlblab/CS-MIL/blob/main/Relativework.png)<br />
 ![AttentionMap](https://github.com/hrlblab/CS-MIL/blob/main/AttentionMap.png)<br />
-
-
-## Abstract
 Analyzing high resolution whole slide images (WSIs) with regard to information across multiple scales poses a significant challenge in digital pathology. Multi-instance learning (MIL) is a common solution for working with high resolution images by classifying bags of objects (i.e. sets of smaller image patches). However, such processing is typically performed at a single scale (e.g., 20X magnification) of WSIs, disregarding the vital inter-scale information that is key to diagnoses by human pathologists. In this study, we propose a novel cross-scale MIL algorithm to explicitly aggregate inter-scale relationships into a single MIL network for pathological image diagnosis. The contribution of this paper is three-fold: <br /> 
 
 (1) A novel cross-scale MIL (CS-MIL) algorithm that integrates the multi-scale information and the inter-scale relationships is proposed; <br /> 
