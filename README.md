@@ -17,7 +17,7 @@ This is the official implementation of Cross-scale Attention Guided Multi-instan
 > *MMMI 2022* <br />
 
 ```diff
-+ We release an inference pipeline as a single Docker.
++ We release an inference pipeline for CD classification as a single Docker.
 ```
 
 ## Quick Start
