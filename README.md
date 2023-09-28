@@ -31,15 +31,16 @@ docker run --rm -v [/Data2/CS-MIL_data]/input:/input/:ro -v [/Data2/CS-MIL_data]
 You may put your WSIs in the "input" folder and change the dirname inside of "[]" to your local root. <br />
 
 You can also refer the source code of the whole pipeline in [run_inference.py](https://github.com/hrlblab/CS-MIL/blob/main/CS-MIL_Docker/src/run_inference.py) for the step-by-step process, which are <br /> 
-Step1. Get tiles (with foreground segmentation); <br />
-Step2. Embedding the patches by SimSiam pre-trained models at different scales; <br />
-Step3. Clustering the features; <br />
-Step4. Get CD classification by pretrained CS-MIL models. <br />
+- Step1. Get tiles (with foreground segmentation); <br />
+- Step2. Embedding the patches by SimSiam pre-trained models at different scales; <br />
+- Step3. Clustering the features; <br />
+- Step4. Get CD classification by pretrained CS-MIL models. <br />
 
 ## Abstract
 ![Overview](https://github.com/hrlblab/CS-MIL/blob/main/Cross-scale.png)<br />
 ![Pipeline](https://github.com/hrlblab/CS-MIL/blob/main/Relativework.png)<br />
 ![AttentionMap](https://github.com/hrlblab/CS-MIL/blob/main/AttentionMap.png)<br />
+
 Analyzing high resolution whole slide images (WSIs) with regard to information across multiple scales poses a significant challenge in digital pathology. Multi-instance learning (MIL) is a common solution for working with high resolution images by classifying bags of objects (i.e. sets of smaller image patches). However, such processing is typically performed at a single scale (e.g., 20X magnification) of WSIs, disregarding the vital inter-scale information that is key to diagnoses by human pathologists. In this study, we propose a novel cross-scale MIL algorithm to explicitly aggregate inter-scale relationships into a single MIL network for pathological image diagnosis. The contribution of this paper is three-fold: <br /> 
 
 (1) A novel cross-scale MIL (CS-MIL) algorithm that integrates the multi-scale information and the inter-scale relationships is proposed; <br /> 
@@ -47,14 +48,14 @@ Analyzing high resolution whole slide images (WSIs) with regard to information a
 (3) Superior performance on both in-house and public datasets is demonstrated by our simple cross-scale MIL strategy.<br /> 
 
 ## Deployment on CD dataset
-#### Self-supervised learning for Patch Embedding
+#### Self-supervised Learning for Patch Embedding
 (1) Run [main_mixprecision.py](https://github.com/hrlblab/CS-MIL/blob/main/Emb_Clustering_Code/main_mixprecision.py) to train SimSiam models at different scales. <br /> 
-(2) Run [get_features_simsiam_256.py](https://github.com/hrlblab/CS-MIL/blob/main/Emb_Clustering_Code/get_features_simsiam_256.py) (20x) (same for 512 (10x), 1024 (5x)) to extract features from patches. <br /> 
+(2) Run [get_features_simsiam_256.py](https://github.com/hrlblab/CS-MIL/blob/main/Emb_Clustering_Code/get_features_simsiam_256.py) (20x) (same for 512.py (10x), 1024.py (5x)) to extract features from patches. <br /> 
 
-#### K-mean clustering
+#### K-mean Clustering
 Run [create_kmeans_features_local_singleresolution.py](https://github.com/hrlblab/CS-MIL/blob/main/Emb_Clustering_Code/create_kmeans_features_local_singleresolution.py) to get k-mean clustering results from features. <br /> 
 
-#### Training and testing
+#### Training and Testing
 (1) Run [MIL_global_Stage1_Training.py](https://github.com/hrlblab/CS-MIL/blob/main/Train_Test_Code/MIL_global_Stage1_Training.py) to train the model. <br /> 
 (2) Run [MIL_global_Stage1_Testing.py](https://github.com/hrlblab/CS-MIL/blob/main/Train_Test_Code/MIL_global_Stage1_Training.py) to test the model. <br /> 
 
@@ -65,7 +66,7 @@ The figure below shows the patches for training in the two datasets (Micro-anoma
 
 (1) The  micro white crosses pattern only appear on positive patches at 20x maganification in the micro-anomaly dataset.  <br />
 (2) The macro anomaly (ellipse) is easily recognized at 5x with larger visual fields in macro-anomaly dataset.  <br />
-All of the patches are extracted from normal tissue samples in Unitopatho dataset. Two datasets were released to measure the generalization of the cross-scale designs for digital pathology community. <br /> The patches are avaliable at https://drive.google.com/drive/folders/1PvWi4lmA0bPeLZFRxDqYFftth69srIyn?usp=sharing <br />
+All of the patches are extracted from normal tissue samples in Unitopatho dataset. Two datasets were released to measure the generalization of the cross-scale designs for digital pathology community. <br /> The patches are avaliable at [here](https://drive.google.com/drive/folders/1PvWi4lmA0bPeLZFRxDqYFftth69srIyn?usp=sharing) <br />
 
 <img src='https://github.com/hrlblab/CS-MIL/blob/main/Toydataset.png' align="center" height="530px"> 
 
@@ -76,6 +77,16 @@ The proposed method accurately differentiates distinctive patterns at different 
 (3) The box plots on the right panel show the attention score distribution at different scales, proving that the cross-scale attention mechanism provides reliable scores at different scales.<br />
 
 ![Cross-scale attention map on toy dataset](https://github.com/hrlblab/CS-MIL/blob/main/ToydatasetResults.png)<br />
+
+
+## Deployment on Toydataset
+#### Data Preprocessing
+Run [MIL_bag_generation.py](https://github.com/hrlblab/CS-MIL/blob/main/Toydataset_Code/data_processing/MIL_bag_generation.py) to generate the bags for trainingset and validationset. <br /> 
+
+#### Training and Testing
+(1) Run [MIL_main_DeepSurv_dataset1.py](https://github.com/hrlblab/CS-MIL/blob/main/Toydataset_Code/cs-mil-toydataset/MIL_main_DeepSurv_dataset1.py) (same for dataset2.py) to train the model. <br /> 
+(2) Run [MIL_main_DeepSurv_batch_dataset1_getattention.py](https://github.com/hrlblab/CS-MIL/blob/main/Toydataset_Code/cs-mil-toydataset/MIL_main_DeepSurv_batch_dataset1_getattention.py) (same for dataset2.py) to test the model. <br /> 
+
 
 ## Citation
 ```
