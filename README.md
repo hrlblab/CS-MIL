@@ -95,7 +95,7 @@ Run [MIL_bag_generation.py](https://github.com/hrlblab/CS-MIL/blob/main/Toydatas
 (2) Run [MIL_main_DeepSurv_batch_dataset1_getattention.py](https://github.com/hrlblab/CS-MIL/blob/main/Toydataset_Code/cs-mil-toydataset/MIL_main_DeepSurv_batch_dataset1_getattention.py) (same for dataset2.py) to test the model and get the attention scores. <br /> 
 
 
-## Deployment on Toydataset
+## Acknowledgments
 This code is inspired by [DeepAttnMISL](https://github.com/uta-smile/DeepAttnMISL) and [AttentionDeepMIL](https://github.com/AMLab-Amsterdam/AttentionDeepMIL).
 
 
