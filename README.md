@@ -47,6 +47,13 @@ Analyzing high resolution whole slide images (WSIs) with regard to information a
 (3) Superior performance on both in-house and public datasets is demonstrated by our simple cross-scale MIL strategy.<br /> 
 
 
+## Deployment on CD dataset
+#### Self-supervised learning for Patch Embedding
+Use [Emb_Clustering_Code/main_mixprecision.py](https://github.com/hrlblab/CS-MIL/blob/main/Emb_Clustering_Code/main_mixprecision.py) to train SimSiam models at different scales. Then use[Emb_Clustering_Code/get_features_simsiam_256.py](https://github.com/hrlblab/CS-MIL/blob/main/Emb_Clustering_Code/get_features_simsiam_256.py) (20x) (same for 512 (10x), 1024 (5x)) to extract features from patches. <br /> 
+
+Use [Emb_Clustering_Code/create_kmeans_features_local_singleresolution.py](https://github.com/hrlblab/CS-MIL/blob/main/Emb_Clustering_Code/create_kmeans_features_local_singleresolution.py) to get k-mean clustering results from features. <br /> 
+
+
 ## Toydataset
 To assess the effectiveness of the cross-scale attention mechanism, we evaluated CS-MIL using two toy datasets that represent distinct morphological patterns at different scales in digital pathology. These datasets were selected to simulate different scenarios and test the functionality of our approach.<br />
 
