@@ -22,11 +22,9 @@ This is the official implementation of Cross-scale Attention Guided Multi-instan
 
 ## Quick Start
 
-#### Example and Pretrained Weights
+#### WSI examples
 
 The examples of WSI can be downloaded [here](https://drive.google.com/drive/folders/14PfBtjDNXZCLxcWu0hfTMQwIUeGmARSc?usp=drive_link).  <br /> 
-The pretrained weights of CD patch embedding at different scales can be download [here](https://drive.google.com/drive/folders/1YOHQw0S39D-84Z6o6HcKBsQ6ZlWMFW7d?usp=drive_link).  <br /> 
-The pretrained model weights of CD classification can be download [here](https://drive.google.com/drive/folders/1fq0bB8HYD23YOSsoA-cQDlT6XFKkxtZq?usp=drive_link).  <br /> 
 
 #### Get Our Docker Image and Run The Docker with GPU
 
