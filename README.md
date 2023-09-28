@@ -43,7 +43,7 @@ You can also refer the source code of the whole pipeline in [run_inference.py](h
 
 ## Abstract
 ![Overview](https://github.com/hrlblab/CS-MIL/blob/main/Cross-scale.png)<br />
-![Pipeline](https://github.com/hrlblab/CS-MIL/blob/main/Relativework.png)<br />
+![Pipeline](https://github.com/hrlblab/CS-MIL/blob/main/Pipeline.png)<br />
 ![AttentionMap](https://github.com/hrlblab/CS-MIL/blob/main/AttentionMap.png)<br />
 
 Analyzing high resolution whole slide images (WSIs) with regard to information across multiple scales poses a significant challenge in digital pathology. Multi-instance learning (MIL) is a common solution for working with high resolution images by classifying bags of objects (i.e. sets of smaller image patches). However, such processing is typically performed at a single scale (e.g., 20X magnification) of WSIs, disregarding the vital inter-scale information that is key to diagnoses by human pathologists. In this study, we propose a novel cross-scale MIL algorithm to explicitly aggregate inter-scale relationships into a single MIL network for pathological image diagnosis. The contribution of this paper is three-fold: <br /> 
