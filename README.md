@@ -30,11 +30,11 @@ docker run --rm -v [/Data2/CS-MIL_data]/input:/input/:ro -v [/Data2/CS-MIL_data]
 
 You may put your WSIs in the "input" folder and change the dirname inside of "[]" to your local root. <br />
 
-You can also refer the source code of the whole pipeline in [CS-MIL_Docker/src/run_inference.py](https://github.com/hrlblab/CS-MIL/blob/main/CS-MIL_Docker/src/run_inference.py) for the step-by-step process, which are <br /> 
-(1) Get tiles (with foreground segmentation); <br />
-(2) Embedding the patches by SimSiam pre-trained models at different scales; <br />
-(3) Clustering the features; <br />
-(4) Get CD classification by pretrained CS-MIL models. <br />
+You can also refer the source code of the whole pipeline in [run_inference.py](https://github.com/hrlblab/CS-MIL/blob/main/CS-MIL_Docker/src/run_inference.py) for the step-by-step process, which are <br /> 
+Step1. Get tiles (with foreground segmentation); <br />
+Step2. Embedding the patches by SimSiam pre-trained models at different scales; <br />
+Step3. Clustering the features; <br />
+Step4. Get CD classification by pretrained CS-MIL models. <br />
 
 ## Abstract
 ![Overview](https://github.com/hrlblab/CS-MIL/blob/main/Cross-scale.png)<br />
@@ -46,13 +46,17 @@ Analyzing high resolution whole slide images (WSIs) with regard to information a
 (2) A toy dataset with scale-specific morphological features is created and released to examine and visualize differential cross-scale attention; <br /> 
 (3) Superior performance on both in-house and public datasets is demonstrated by our simple cross-scale MIL strategy.<br /> 
 
-
 ## Deployment on CD dataset
 #### Self-supervised learning for Patch Embedding
-Use [Emb_Clustering_Code/main_mixprecision.py](https://github.com/hrlblab/CS-MIL/blob/main/Emb_Clustering_Code/main_mixprecision.py) to train SimSiam models at different scales. Then use[Emb_Clustering_Code/get_features_simsiam_256.py](https://github.com/hrlblab/CS-MIL/blob/main/Emb_Clustering_Code/get_features_simsiam_256.py) (20x) (same for 512 (10x), 1024 (5x)) to extract features from patches. <br /> 
+(1) Run [main_mixprecision.py](https://github.com/hrlblab/CS-MIL/blob/main/Emb_Clustering_Code/main_mixprecision.py) to train SimSiam models at different scales. <br /> 
+(2) Run [get_features_simsiam_256.py](https://github.com/hrlblab/CS-MIL/blob/main/Emb_Clustering_Code/get_features_simsiam_256.py) (20x) (same for 512 (10x), 1024 (5x)) to extract features from patches. <br /> 
 
-Use [Emb_Clustering_Code/create_kmeans_features_local_singleresolution.py](https://github.com/hrlblab/CS-MIL/blob/main/Emb_Clustering_Code/create_kmeans_features_local_singleresolution.py) to get k-mean clustering results from features. <br /> 
+#### K-mean clustering
+Run [create_kmeans_features_local_singleresolution.py](https://github.com/hrlblab/CS-MIL/blob/main/Emb_Clustering_Code/create_kmeans_features_local_singleresolution.py) to get k-mean clustering results from features. <br /> 
 
+#### Training and testing
+(1) Run [MIL_global_Stage1_Training.py](https://github.com/hrlblab/CS-MIL/blob/main/Train_Test_Code/MIL_global_Stage1_Training.py) to train the model. <br /> 
+(2) Run [MIL_global_Stage1_Testing.py](https://github.com/hrlblab/CS-MIL/blob/main/Train_Test_Code/MIL_global_Stage1_Training.py) to test the model. <br /> 
 
 ## Toydataset
 To assess the effectiveness of the cross-scale attention mechanism, we evaluated CS-MIL using two toy datasets that represent distinct morphological patterns at different scales in digital pathology. These datasets were selected to simulate different scenarios and test the functionality of our approach.<br />
