@@ -22,10 +22,6 @@ This is the official implementation of Cross-scale Attention Guided Multi-instan
 
 ## Quick Start
 
-#### WSI examples
-
-The examples of WSI can be downloaded [here](https://drive.google.com/drive/folders/14PfBtjDNXZCLxcWu0hfTMQwIUeGmARSc?usp=drive_link).  <br /> 
-
 #### Get Our Docker Image and Run The Docker with GPU
 
 ```
