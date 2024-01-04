@@ -3,7 +3,7 @@
 ### [[Pipeline Docker]](https://hub.docker.com/repository/docker/ddrrnn123/cs-mil/)  [[Project Page]](https://github.com/hrlblab/CS-MIL)   [[Journal paper]](https://arxiv.org/pdf/2304.00216.pdf) [[MMMI 2022 paper]](https://link.springer.com/chapter/10.1007/978-3-031-18814-5_3) [[SPIE 2024 paper]](https://arxiv.org/pdf/2308.09831.pdf) <br />
 
 
-This is the official implementation of Cross-scale Attention Guided Multi-instance Learning for Crohn's Disease Diagnosis with Pathological Images. <br />
+This is the official implementation of Cross-scale Multi-instance Learning for Pathological Image Diagnosis. This method is also deployed as Cross-modality attention-based multimodal fusion for patient survival prediction.<br />
 
 **Journal Paper** <br />
 > [Cross-scale Multi-instance Learning for Pathological Image Diagnosis](https://arxiv.org/pdf/2304.00216.pdf) <br />
