@@ -97,6 +97,13 @@ Run [MIL_bag_generation.py](https://github.com/hrlblab/CS-MIL/blob/main/Toydatas
 (2) Run [MIL_main_DeepSurv_batch_dataset1_getattention.py](https://github.com/hrlblab/CS-MIL/blob/main/Toydataset_Code/cs-mil-toydataset/MIL_main_DeepSurv_batch_dataset1_getattention.py) (same for dataset2.py) to test the model and get the attention scores. <br /> 
 
 
+## Multi-modal Fusion
+
+![Overview](https://github.com/hrlblab/CS-MIL/blob/main/Cross-modality.png)<br />
+
+In this work, we also propose a cross-modality attention-based multimodal fusion pipeline designed to integrate modality-specific knowledge for patient survival prediction in non-small cell lung cancer (NSCLC). Instead of merely concatenating or summing up the features from different modalities, our method gauges the importance of each modality for feature fusion with cross-modality relationship when infusing the multimodal features. Compared with single modality, which achieved c-index of 0.5772 and 0.5885 using solely tissue image data or RNA-seq data, respectively, the proposed fusion approach achieved c-index 0.6587 in our experiment, showcasing the capability of assimilating modality-specific knowledge from varied modalities. <br />
+
+
 ## Acknowledgments
 This code is inspired by [DeepAttnMISL](https://github.com/uta-smile/DeepAttnMISL) and [AttentionDeepMIL](https://github.com/AMLab-Amsterdam/AttentionDeepMIL).
 
