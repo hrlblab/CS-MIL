@@ -124,4 +124,12 @@ This code is inspired by [DeepAttnMISL](https://github.com/uta-smile/DeepAttnMIS
   journal={arXiv preprint arXiv:2304.00216},
   year={2023}
 }
+
+
+@article{deng2023cross,
+  title={Cross-modality Attention-based Multimodal Fusion for Non-small Cell Lung Cancer (NSCLC) Patient Survival Prediction},
+  author={Deng, Ruining and Shaikh, Nazim and Shannon, Gareth and Nie, Yao},
+  journal={arXiv preprint arXiv:2308.09831},
+  year={2023}
+}
 ```
