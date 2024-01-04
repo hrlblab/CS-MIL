@@ -54,6 +54,11 @@ Analyzing high resolution whole slide images (WSIs) with regard to information a
 (2) A toy dataset with scale-specific morphological features is created and released to examine and visualize differential cross-scale attention; <br /> 
 (3) Superior performance on both in-house and public datasets is demonstrated by our simple cross-scale MIL strategy.<br /> 
 
+## Multi-modal Fusion
+![Overview](https://github.com/hrlblab/CS-MIL/blob/main/Cross-modality.png)<br />
+
+In this work, we also propose a cross-modality attention-based multimodal fusion pipeline designed to integrate modality-specific knowledge for patient survival prediction in non-small cell lung cancer (NSCLC). Instead of merely concatenating or summing up the features from different modalities, our method gauges the importance of each modality for feature fusion with cross-modality relationship when infusing the multimodal features. Compared with single modality, which achieved c-index of 0.5772 and 0.5885 using solely tissue image data or RNA-seq data, respectively, the proposed fusion approach achieved c-index 0.6587 in our experiment, showcasing the capability of assimilating modality-specific knowledge from varied modalities. <br />
+
 ## Deployment on CD dataset
 #### Self-supervised Learning for Patch Embedding
 (1) Run [main_mixprecision.py](https://github.com/hrlblab/CS-MIL/blob/main/Emb_Clustering_Code/main_mixprecision.py) to train SimSiam models at different scales. <br /> 
@@ -95,13 +100,6 @@ Run [MIL_bag_generation.py](https://github.com/hrlblab/CS-MIL/blob/main/Toydatas
 #### Training and Testing
 (1) Run [MIL_main_DeepSurv_dataset1.py](https://github.com/hrlblab/CS-MIL/blob/main/Toydataset_Code/cs-mil-toydataset/MIL_main_DeepSurv_dataset1.py) (same for dataset2.py) to train the model. <br /> 
 (2) Run [MIL_main_DeepSurv_batch_dataset1_getattention.py](https://github.com/hrlblab/CS-MIL/blob/main/Toydataset_Code/cs-mil-toydataset/MIL_main_DeepSurv_batch_dataset1_getattention.py) (same for dataset2.py) to test the model and get the attention scores. <br /> 
-
-
-## Multi-modal Fusion
-
-![Overview](https://github.com/hrlblab/CS-MIL/blob/main/Cross-modality.png)<br />
-
-In this work, we also propose a cross-modality attention-based multimodal fusion pipeline designed to integrate modality-specific knowledge for patient survival prediction in non-small cell lung cancer (NSCLC). Instead of merely concatenating or summing up the features from different modalities, our method gauges the importance of each modality for feature fusion with cross-modality relationship when infusing the multimodal features. Compared with single modality, which achieved c-index of 0.5772 and 0.5885 using solely tissue image data or RNA-seq data, respectively, the proposed fusion approach achieved c-index 0.6587 in our experiment, showcasing the capability of assimilating modality-specific knowledge from varied modalities. <br />
 
 
 ## Acknowledgments
