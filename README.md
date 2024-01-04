@@ -1,6 +1,6 @@
 # Cross-scale Multi-instance Learning for Pathological Image Diagnosis
 
-### [[Pipeline Docker]](https://hub.docker.com/repository/docker/ddrrnn123/cs-mil/)  [[Project Page]](https://github.com/hrlblab/CS-MIL)   [[Journal paper]](https://arxiv.org/pdf/2304.00216.pdf) [[MMMI 2022 paper]](https://link.springer.com/chapter/10.1007/978-3-031-18814-5_3) <br />
+### [[Pipeline Docker]](https://hub.docker.com/repository/docker/ddrrnn123/cs-mil/)  [[Project Page]](https://github.com/hrlblab/CS-MIL)   [[Journal paper]](https://arxiv.org/pdf/2304.00216.pdf) [[MMMI 2022 paper]](https://link.springer.com/chapter/10.1007/978-3-031-18814-5_3) [[SPIE 2024 paper]](https://arxiv.org/pdf/2308.09831.pdf) <br />
 
 
 This is the official implementation of Cross-scale Attention Guided Multi-instance Learning for Crohn's Disease Diagnosis with Pathological Images. <br />
@@ -15,6 +15,12 @@ This is the official implementation of Cross-scale Attention Guided Multi-instan
 > [Cross-scale Attention Guided Multi-instance Learning for Crohn's Disease Diagnosis with Pathological Images](https://link.springer.com/chapter/10.1007/978-3-031-18814-5_3) <br />
 > Ruining Deng, Can Cui, Lucas W. Remedios, Shunxing Bao, R. Michael Womick, Sophie Chiron, Jia Li, Joseph T. Roland, Ken S. Lau, Qi Liu, Keith T. Wilson, Yaohong Wang, Lori A. Coburn, Bennett A. Landman, and Yuankai Huo <br />
 > *MMMI 2022* <br />
+
+
+**Multi-modal Fusion Paper** <br />
+> [Cross-modality Attention-based Multimodal Fusion for Non-small Cell Lung Cancer (NSCLC) Patient Survival Prediction](https://arxiv.org/pdf/2308.09831.pdf) <br />
+> Ruining Deng, Nazim Shaikh, Gareth Shannon, and Yao Nie <br />
+> *SPIE 2024* <br />
 
 ```diff
 + We release an inference pipeline for CD classification as a single Docker.
