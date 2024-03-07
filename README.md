@@ -1,6 +1,6 @@
 # Cross-scale & Cross-modality Multi-instance Learning for Pathological Image Diagnosis
 
-### [[Pipeline Docker]](https://hub.docker.com/repository/docker/ddrrnn123/cs-mil/)  [[Project Page]](https://github.com/hrlblab/CS-MIL)   [[Journal paper]](https://arxiv.org/pdf/2304.00216.pdf) [[MMMI 2022 paper]](https://link.springer.com/chapter/10.1007/978-3-031-18814-5_3) [[SPIE 2024 paper]](https://arxiv.org/pdf/2308.09831.pdf) <br />
+### [[Pipeline Docker]](https://hub.docker.com/repository/docker/ddrrnn123/cs-mil/)  [[Project Page]](https://github.com/hrlblab/CS-MIL)   [[Journal paper]](https://www.sciencedirect.com/science/article/pii/S1361841524000495) [[MMMI 2022 paper]](https://link.springer.com/chapter/10.1007/978-3-031-18814-5_3) [[SPIE 2024 paper]](https://arxiv.org/pdf/2308.09831.pdf) <br />
 
 
 This is the official implementation of Cross-scale Multi-instance Learning for Pathological Image Diagnosis. This method is also deployed as Cross-modality attention-based multimodal fusion for patient survival prediction.<br />
