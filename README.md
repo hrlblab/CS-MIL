@@ -6,7 +6,7 @@
 This is the official implementation of Cross-scale Multi-instance Learning for Pathological Image Diagnosis. This method is also deployed as Cross-modality attention-based multimodal fusion for patient survival prediction.<br />
 
 **Journal Paper** <br />
-> [Cross-scale Multi-instance Learning for Pathological Image Diagnosis](https://doi.org/10.1016/j.media.2024.103124) <br />
+> [Cross-scale Multi-instance Learning for Pathological Image Diagnosis](https://www.sciencedirect.com/science/article/pii/S1361841524000495) <br />
 > Ruining Deng, Can Cui, Lucas W. Remedios, Shunxing Bao, R. Michael Womick, Sophie Chiron, Jia Li, Joseph T. Roland, Ken S. Lau, Qi Liu, Keith T. Wilson, Yaohong Wang, Lori A. Coburn, Bennett A. Landman, and Yuankai Huo <br />
 > *Medical Image Analysis* <br />
 
