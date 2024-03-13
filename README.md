@@ -55,7 +55,7 @@ Analyzing high resolution whole slide images (WSIs) with regard to information a
 (3) Superior performance on both in-house and public datasets is demonstrated by our simple cross-scale MIL strategy.<br /> 
 
 ## Multi-modal Fusion
-![Overview](https://github.com/hrlblab/CS-MIL/blob/main/Cross-modality.png)<br />
+![Overview](https://github.com/hrlblab/CS-MIL/blob/main/Cross_modality.png)<br />
 
 In this work, we also propose a cross-modality attention-based multimodal fusion pipeline designed to integrate modality-specific knowledge for patient survival prediction in non-small cell lung cancer (NSCLC). Instead of merely concatenating or summing up the features from different modalities, our method gauges the importance of each modality for feature fusion with cross-modality relationship when infusing the multimodal features. Compared with single modality, which achieved c-index of 0.5772 and 0.5885 using solely tissue image data or RNA-seq data, respectively, the proposed fusion approach achieved c-index 0.6587 in our experiment, showcasing the capability of assimilating modality-specific knowledge from varied modalities. <br />
 
