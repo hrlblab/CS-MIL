@@ -101,6 +101,9 @@ Run [MIL_bag_generation.py](https://github.com/hrlblab/CS-MIL/blob/main/Toydatas
 (1) Run [MIL_main_DeepSurv_dataset1.py](https://github.com/hrlblab/CS-MIL/blob/main/Toydataset_Code/cs-mil-toydataset/MIL_main_DeepSurv_dataset1.py) (same for dataset2.py) to train the model. <br /> 
 (2) Run [MIL_main_DeepSurv_batch_dataset1_getattention.py](https://github.com/hrlblab/CS-MIL/blob/main/Toydataset_Code/cs-mil-toydataset/MIL_main_DeepSurv_batch_dataset1_getattention.py) (same for dataset2.py) to test the model and get the attention scores. <br /> 
 
+## TCGA-GBMLGG dataset
+We provide a demo of cropped patches from three WSIs in the TCGA-GBMLGG dataset in [here](https://drive.google.com/drive/folders/1fgddn8k6-Kp234W6OTXdeKUIaCtpNNx6?usp=sharing), as well as the [code](https://github.com/hrlblab/CS-MIL/blob/main/Train_Test_Code/Regions_to_multiscale_patches.py) to crop patches from region images. You can download the TCGA dataset from the official platform and use the provided code to generate multi-scale cropped patches.
+
 
 ## Acknowledgments
 This code is inspired by [DeepAttnMISL](https://github.com/uta-smile/DeepAttnMISL) and [AttentionDeepMIL](https://github.com/AMLab-Amsterdam/AttentionDeepMIL).
